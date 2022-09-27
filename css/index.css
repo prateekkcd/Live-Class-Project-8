@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-div {
+  padding: 1px;
+  background-image: url(../images/backcover.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 97vh;
+}
+
+nav {
+  max-width: 1400px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0px 20px;
+  color: #1f2873;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.signin-btn {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 18px;
+  border: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(150, 92, 242, 1) 0%,
+    rgba(255, 138, 220, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.intro-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 1;
+  margin-top: 7em;
+}
+
+.left-section > h1 {
+  font-size: 90px;
+  font-family: "Roboto";
+  color: #3e4794;
+}
+
+.left-section > h4 {
+  margin-top: 50px;
+  font-weight: 400;
+  width: 65%;
+  font-size: 16px;
+  font-family: "Roboto";
+  line-height: 1.6em;
+  color: #484848;
+}
+
+.learn-more-btn {
+  margin-top: 70px;
+  padding: 10px 35px;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Roboto";
+  color: #ffffff;
+  border: 0px;
+  border-radius: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(150, 92, 242, 1) 0%,
+    rgba(255, 138, 220, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.imgs-div > img:last-child {
+  height: 80vh;
+}
+
+.imgs-div {
+  flex: 1;
+  position: relative;
+}
+
+.vector-img {
+  position: absolute;
+  top: 70%;
+}
+
+.vector-dot {
+  position: absolute;
+  top: 70%;
+  left: 7%;
+}
+
+@media screen and (max-width: 1500px) {
+  nav {
+    padding: 0 2em;
+  }
+
+  .intro-section {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .left-section > h1 {
+    font-size: 70px;
+  }
+
+  .left-section > h4 {
+    width: 80%;
+  }
+
+  .learn-more-btn {
+    font-size: 24px;
+  }
+
+  .imgs-div > img:last-child {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav-items {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .intro-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .left-section > h4 {
+    margin: 40px auto;
+  }
+
+  .learn-more-btn {
+    margin: 0 0 50px 0;
+  }
+
+  .imgs-div > img:last-child {
+    height: 40vh;
+  }
+}
